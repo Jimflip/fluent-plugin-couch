@@ -24,6 +24,7 @@ module Fluent
 		config_param :doc_key_jsonpath, :string, :default => nil
 		config_param :db_key, :string, :default => nil
 		config_param :db_per, :string, :default => nil
+		config_param :w, :integer, :default => 1 #need to add support to couchrest for this
 		#
 		#
 		def initialize
@@ -137,7 +138,8 @@ module Fluent
 				record['_id'] = id unless id.nil?
 
 				date = record['dt']
-				key = "#{record[@db_key]}_#{date[0]}#{date[1]}#{date[2]}"
+
+				key = "#{record[@db_key].downcase}_#{date[0]}#{date[1].to_s.rjust(2, '0')}#{date[2].to_s.rjust(2, '0')}"
 
 				records[key] = [] unless records[key]
 				records[key] << record

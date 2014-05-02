@@ -5,9 +5,9 @@ require 'rake/clean'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "fluent-plugin-couch"
-    gemspec.summary = "CouchDB output plugin for Fluentd event collector"
-    gemspec.author = "Yudai Odagiri"
+    gemspec.name = "fluent-plugin-couch-sharded"
+    gemspec.summary = "CouchDB output plugin for Fluentd event collector, forked to add 'sharding' features"
+    gemspec.author = "Yudai Odagiri,James Birmingham"
     gemspec.email = "ixixizko@gmail.com"
     gemspec.homepage = "http://github.com/ixixi/fluent-plugin-couch"
     gemspec.has_rdoc = false

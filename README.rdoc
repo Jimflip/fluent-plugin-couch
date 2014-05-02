@@ -8,13 +8,15 @@ fluent-plugin-couch provides output plugins for {Fluentd}[http://fluentd.org/].
 
 The gem is hosted at {Rubygems.org}[http://rubygems.org]. You can install the gem as follows:
 
-    $ fluent-gem install fluent-plugin-couch
+    $ fluent-gem install fluent-plugin-couch-sharded
 
 == Component
 
 === CouchDBOutput
 
 Store fluent-event as CouchDB Document to CouchDB database.
+
+This is a forked version to add extra features.
 
 == Configuration
 
@@ -46,7 +48,7 @@ Store fluent-event as CouchDB Document to CouchDB database.
 == TODO
 === More configuration
 === Feature
-* 
+*
 
 == Tool
 

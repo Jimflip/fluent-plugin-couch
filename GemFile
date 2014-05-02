@@ -1,0 +1,7 @@
+source :rubygems
+
+gemspec
+
+gem "rake"
+gem "jeweler"
+gem "rspec"
