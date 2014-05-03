@@ -1,37 +1,13 @@
-PATH
-  remote: .
-  specs:
-    fluent-plugin-couch-sharded (0.6.0)
-      couchrest (~> 1.1.2)
-      fluent-plugin-couch-sharded
-      fluentd (~> 0.10.0)
-      jeweler
-      jsonpath (~> 0.4.2)
-      rake
-      rspec
-
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     addressable (2.3.6)
     builder (3.2.2)
-    cool.io (1.2.3)
-    couchrest (1.1.3)
-      mime-types (~> 1.15)
-      multi_json (~> 1.0)
-      rest-client (~> 1.6.1)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.2.5)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    fluentd (0.10.46)
-      cool.io (>= 1.1.1, < 2.0.0, != 1.2.0)
-      http_parser.rb (>= 0.5.1, < 0.7.0)
-      json (>= 1.4.3)
-      msgpack (>= 0.4.4, < 0.6.0, != 0.5.3, != 0.5.2, != 0.5.1, != 0.5.0)
-      sigdump (~> 0.2.2)
-      yajl-ruby (~> 1.0)
     git (1.2.6)
     github_api (0.11.3)
       addressable (~> 2.3)
@@ -43,7 +19,6 @@ GEM
       oauth2
     hashie (2.1.1)
     highline (1.6.21)
-    http_parser.rb (0.6.0)
     jeweler (2.0.1)
       builder
       bundler (>= 1.0)
@@ -54,13 +29,9 @@ GEM
       rake
       rdoc
     json (1.8.1)
-    jsonpath (0.4.2)
-      multi_json
     jwt (0.1.11)
       multi_json (>= 1.5)
-    mime-types (1.25.1)
     mini_portile (0.5.3)
-    msgpack (0.5.8)
     multi_json (1.9.3)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -76,8 +47,6 @@ GEM
     rake (10.3.1)
     rdoc (4.1.1)
       json (~> 1.4)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -86,15 +55,12 @@ GEM
     rspec-expectations (2.14.5)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.14.6)
-    sigdump (0.2.2)
     thread_safe (0.3.3)
-    yajl-ruby (1.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  fluent-plugin-couch-sharded!
   jeweler
   rake
   rspec
