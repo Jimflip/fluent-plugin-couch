@@ -2,4 +2,8 @@ source 'https://rubygems.org'
 
 gem "rake"
 gem "jeweler"
-gem "rspec"
+
+group :test, :development do
+	gem "rspec"
+end
+
