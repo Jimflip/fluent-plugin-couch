@@ -150,7 +150,13 @@ module Fluent
 					@db[key] = CouchRest.database!("#{@protocol}://#{@account}#{@host}:#{@port}/#{@database+"_"+key}")
 				end
 
-				@db[key].bulk_save(data)
+				begin
+					@db[key].bulk_save(data)
+				rescue Exception => e
+					$log.warn e
+					@db[key] = CouchRest.database!("#{@protocol}://#{@account}#{@host}:#{@port}/#{@database+"_"+key}")
+					@db[key].bulk_save(data)
+				end
 			end
 
 		end
